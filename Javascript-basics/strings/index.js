@@ -1,37 +1,55 @@
-//Strings in JavaScript
-//Strings are sequences of characters, where each character is a Unicode code point. In JavaScript, strings are enclosed in single or double quotes. For example, 'hello' and "hello" are both strings that represent the text hello.
+// Strings in JavaScript
 
-//"hello".lenght what will be the output and why ?
-//The length property of a string returns the number of characters in the string. In this case, the string 'hello' has 5 characters, so the output will be 5.
+// Strings are sequences of characters, where each character is a Unicode code point. They are enclosed in single ('') or double ("") quotes.
 
-//indexing in strings in JavaScript?
-//In JavaScript, you can access individual characters in a string using bracket notation and the character's index. The index of the first character in a string is 0, and the index of the last character is the length of the string minus 1. For example, the string 'hello' has a length of 5, so the indexes for each character are as follows:
-// 'h' -> index 0
-// 'e' -> index 1
-// 'l' -> index 2
-// 'l' -> index 3
-// 'o' -> index 4
+// Example:
+let greeting = 'hello';
 
-//"hello"[0] what will be the output and why ?
-//In this case, the expression 'hello'[0] accesses the character at index 0 of the string 'hello', which is 'h'. Therefore, the output will be 'h'.
+// String Length
+// The length property of a string returns the number of characters in the string.
 
-//"hello".indexOf('l') what will be the output and why ?
-//The indexOf() method returns the index within the calling String object of the first occurrence of the specified value, starting the search at fromIndex. If no occurrence is found, -1 is returned. In this case, the string 'hello' contains the character 'l' at index 2, so the output will be 2.
+// Example:
+let length = "hello".length; // Output: 5
 
-//"hello".includes('h') what will be the output and why ?
-//The includes() method determines whether a string contains the specified value. In this case, the string 'hello' contains the character 'h', so the output will be true.
+// Indexing in Strings
+// Individual characters in a string can be accessed using bracket notation and the character's index.
 
-//"Hello.startsWith('H') what will be the output and why ?"
-//The startsWith() method determines whether a string begins with the characters of a specified string. In this case, the string 'Hello' starts with the character 'H', so the output will be true.
+// Example:
+let firstChar = "hello"[0]; // Output: 'h'
 
-//"Hello.endsWith('o') what will be the output and why ?"
-//The endsWith() method determines whether a string ends with the characters of a specified string. In this case, the string 'Hello' ends with the character 'o', so the output will be true.
+// indexOf()
+// The indexOf() method returns the index of the first occurrence of a specified value within a string.
 
-//"hello".indexOf("ll") what will be the output and why ?
-//The indexOf() method returns the index within the calling String object of the first occurrence of the specified value, starting the search at fromIndex. If no occurrence is found, -1 is returned. In this case, the string 'hello' does not contain the substring 'HA', so the output will be -1.
+// Example:
+let index = "hello".indexOf('l'); // Output: 2
 
-//"hello".slice(2, 4) what will be the output and why ?
-//The slice() method extracts a section of a string and returns it as a new string, without modifying the original string. In this case, the substring 'll' is extracted from the string 'hello' starting at index 2 (inclusive) and ending at index 4 (exclusive), so the output will be 'll'.
+// includes()
+// The includes() method determines whether a string contains the specified value.
 
-//"hello".toUpperCase() what will be the output and why ?
-//The toUpperCase() method returns the calling string value converted to uppercase. In this case, the string 'hello' will be converted to 'HELLO'.
+// Example:
+let contains = "hello".includes('h'); // Output: true
+
+// startsWith()
+// The startsWith() method determines whether a string begins with the characters of a specified string.
+
+// Example:
+let startsWith = "Hello".startsWith('H'); // Output: true
+
+// endsWith()
+// The endsWith() method determines whether a string ends with the characters of a specified string.
+
+// Example:
+let endsWith = "Hello".endsWith('o'); // Output: true
+
+// slice()
+// The slice() method extracts a section of a string and returns it as a new string.
+
+// Example:
+let substring = "hello".slice(2, 4); // Output: 'll'
+
+// toUpperCase()
+// The toUpperCase() method converts a string to uppercase.
+
+// Example:
+let uppercase = "hello".toUpperCase(); // Output: 'HELLO'
+

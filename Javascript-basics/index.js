@@ -2,11 +2,11 @@ let js = {
     name: 'JavaScript',
     abbreviation: 'JS',
     isAwesome: true,
-    officialSpec:'ECMAScript',
+    officialSpec: 'ECMAScript',
     birthYear: 1995,
-    creator: 'Brendan Eich',    
+    creator: 'Brendan Eich',
 }
 
-if(js.isAwesome){
+if (js.isAwesome) {
     console.log(`${js.name} is awesome!`)
 }
