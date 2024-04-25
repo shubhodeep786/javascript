@@ -1,64 +1,62 @@
 // Operators in JavaScript
+// Operators are special symbols in programming that are used to perform operations on operands (values or variables).
 
-// Operators are symbols that perform operations on operands. JavaScript supports various types of operators, including arithmetic, comparison, logical, and assignment operators.
+// Arithmetic Operators
+// These operators are used to perform mathematical calculations.
+let a = 10;
+let b = 5;
+console.log(a + b);  // Addition, outputs 15
+console.log(a - b);  // Subtraction, outputs 5
+console.log(a * b);  // Multiplication, outputs 50
+console.log(a / b);  // Division, outputs 2
+console.log(a % b);  // Modulus (remainder), outputs 0
+console.log(++a);    // Increment, outputs 11 (a is now 11)
+console.log(--b);    // Decrement, outputs 4 (b is now 4)
 
-// Arithmetic operators
-// Arithmetic operators perform mathematical operations on numeric operands.
-// Example:
-let x = 5;
-let y = 2;
-let sum = x + y; // Addition
-let difference = x - y; // Subtraction
-let product = x * y; // Multiplication
-let quotient = x / y; // Division
-let remainder = x % y; // Modulus
-let increment = x++; // Increment
-let decrement = y--; // Decrement
+// Real-world analogy for Arithmetic Operators:
+// Think of arithmetic operators like a basic calculator performing operations on two numbers to produce a result.
 
-// Comparison operators
-// Comparison operators are used to compare two values and return a Boolean result.
-// Example:
-let a = 5;
-let b = 10;
-let isEqual = a == b; // Equal to
-let isStrictEqual = a === b; // Strict equal to
-let isNotEqual = a != b; // Not equal to
-let isStrictNotEqual = a !== b; // Strict not equal to
-let isGreaterThan = a > b; // Greater than
-let isLessThan = a < b; // Less than
-let isGreaterOrEqual = a >= b; // Greater than or equal to
-let isLessOrEqual = a <= b; // Less than or equal to
+// Comparison Operators
+// These operators compare two values and return a Boolean value (true or false).
+let c = 10;
+let d = '10';
+console.log(c == d);   // Equal to, outputs true (checks value)
+console.log(c === d);  // Strict equal to, outputs false (checks value and type)
+console.log(c != d);   // Not equal to, outputs false
+console.log(c !== d);  // Strict not equal to, outputs true
+console.log(c > d);    // Greater than, outputs false
+console.log(c < d);    // Less than, outputs false
+console.log(c >= d);   // Greater than or equal to, outputs true
+console.log(c <= d);   // Less than or equal to, outputs true
 
-// Logical operators
-// Logical operators are used to combine or invert Boolean values.
-// Example:
-let p = true;
-let q = false;
-let logicalAND = p && q; // Logical AND
-let logicalOR = p || q; // Logical OR
-let logicalNOT = !p; // Logical NOT
+// Logical Operators
+// These are used to determine the logic between variables or values.
+let e = true;
+let f = false;
+console.log(e && f); // Logical AND, outputs false
+console.log(e || f); // Logical OR, outputs true
+console.log(!e);     // Logical NOT, outputs false
 
-// Assignment operators
-// Assignment operators are used to assign values to variables.
-// Example:
-let num = 10;
-num += 5; // Addition assignment
-num -= 3; // Subtraction assignment
-num *= 2; // Multiplication assignment
-num /= 4; // Division assignment
-num %= 3; // Modulus assignment
+// Assignment Operators
+// They are used to assign values to JavaScript variables.
+let g = 10;
+g += 5;  // g is now 15 (same as g = g + 5)
+g -= 5;  // g is now 10 (same as g = g - 5)
+g *= 2;  // g is now 20 (same as g = g * 2)
+g /= 4;  // g is now 5 (same as g = g / 4)
+g %= 3;  // g is now 2 (same as g = g % 3)
 
-// Bitwise operators
-// Bitwise operators perform operations on the binary representations of numeric operands.
-// Example:
-let m = 5; // Binary: 0101
-let n = 3; // Binary: 0011
-let bitwiseAND = m & n; // Bitwise AND
-let bitwiseOR = m | n; // Bitwise OR
-let bitwiseXOR = m ^ n; // Bitwise XOR
-let bitwiseNOT = ~m; // Bitwise NOT
-let leftShift = m << 1; // Left shift
-let rightShift = m >> 1; // Right shift
-let unsignedRightShift = m >>> 1; // Unsigned right shift
+// Bitwise Operators
+// These operators are used for handling data at the bit level.
+let h = 5; // Binary 0101
+let i = 3; // Binary 0011
+console.log(h & i);  // Bitwise AND, outputs 1 (Binary 0001)
+console.log(h | i);  // Bitwise OR, outputs 7 (Binary 0111)
+console.log(h ^ i);  // Bitwise XOR, outputs 6 (Binary 0110)
+console.log(~h);     // Bitwise NOT, outputs -6 (Binary 1010, two's complement)
+console.log(h << 1); // Left shift, outputs 10 (Binary 1010)
+console.log(h >> 1); // Right shift, outputs 2 (Binary 0010)
+console.log(h >>> 1);// Unsigned right shift, outputs 2 (Binary 0010)
 
-
+// Real-world analogy for Bitwise Operators:
+// Consider bitwise operations like manual switches that can be either on (1) or off (0), manipulating individual bits in a sequence to achieve desired outcomes in electrical circuits or low-level machine tasks.
